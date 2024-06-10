@@ -931,7 +931,8 @@ div.dropdown>div.list>div.item span {
     }
 
     .header {
-        max-height: 936px;
+        max-height: fit-content;
+        height: auto;
     }
 
     /* Second */
