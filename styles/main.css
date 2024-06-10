@@ -383,11 +383,6 @@ div.dropdown>div.list>div.item span {
     max-height: 700px;
 }
 
-/* .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
 .header-l {
     margin-top: 100px;
     margin-left: 4%;
@@ -423,6 +418,20 @@ div.dropdown>div.list>div.item span {
     border-radius: 35px;
     transition: 0.3s all;
     border: 2px solid var(--black);
+}
+
+.header-l .header-l-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.header-l .header-l-bottom .arrow {
+    margin-left: 8px;
+}
+
+.header-l .header-l-bottom .arrow a svg {
+    width: 64px;
 }
 
 .header-l .link:hover {
@@ -920,9 +929,7 @@ div.dropdown>div.list>div.item span {
     }
 
     .header-arror {
-        position: absolute;
-        right: 10%;
-        top: 50%;
+        display: none;
     }
 
     .header-l p {
