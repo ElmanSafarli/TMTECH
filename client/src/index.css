@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+@font-face {
+  font-family: "San Francisco";
+  src: url("./assets/fonts/SFUIDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "San Francisco";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1800px;
+  width: 100%;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey: #737d8c;
+  --purple: #881fff;
+  --light_purple: #eeeffc;
+  --light_blue: #D4EDFF;
+  --light_white: #F9F9F9;
+  --dark_bg: #1f2225;
+  --green: #1C8731;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.fill-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s all;
+}
+
+.active {
+  display: block;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.open-lg {
+  visibility: visible !important;
+  opacity: 1 !important;
+}

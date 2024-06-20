@@ -1,0 +1,29 @@
+{
+    "navBar": {
+        "item_1": "Products",
+        "item_2": "About Us",
+        "item_3": "Contact Us",
+        "item_4": "Messaging",
+        "item_5": "Voice",
+        "item_6": "Communication APIs",
+        "item_7": "Application-to-Person messaging (A2P)",
+        "item_8": "Person-to-Person messaging (P2P)",
+        "item_9": "Person-to-Application messaging (P2A)",
+        "item_10": "SIP Trunking",
+        "item_11": "Virtual Calls"
+    },
+    "sidebar": {
+        "item_1": "Home",
+        "item_2": "Developers"
+    },
+    "header": {
+        "item_1": "We establish a connection between you and your customers on their favorite mobile devices.",
+        "item_2": "TMtech is a leading provider of cloud communication services in the industry. Our mission is to enable you to stay connected with clients worldwide and provide comprehensive support at every stage of your journey.",
+        "item_3": "Talk to an expert"
+    },
+    "product": {
+        "item_1": "Our",
+        "item_2": "products",
+        "item_3": "We offer a comprehensive service that allows you to manage all your SMS needs from one place. From cleansing mobile data to launching your first campaign, our simple online interface enables you to seamlessly integrate SMS into your business today."
+    }
+}
