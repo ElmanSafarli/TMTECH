@@ -1,10 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Images
 import contactImg from '../../assets/3d-abstract-landscape-background-with-extruding-blocks.jpg'
 
 
 const HomeContact = () => {
+
+    const { t } = useTranslation();
 
     return (
         <section>
@@ -17,9 +20,10 @@ const HomeContact = () => {
                         </div>
                         <div className="info">
                             <div>
-                                <h3>Want to know more about how our technology is <span>helping</span> MNOs and Aggregators?
+                                <h3>
+                                    {t('home_contact.heading')} <span>{t('home_contact.heading_span')}</span>
                                 </h3>
-                                <a href="/contact">Book a call</a>
+                                <a href="/contact">{t('home_contact.book_call')}</a>
                             </div>
 
                         </div>

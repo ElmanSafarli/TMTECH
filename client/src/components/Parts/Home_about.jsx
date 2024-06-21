@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Images
 import aboutImg from '../../assets/3185942.jpg';
@@ -17,29 +18,35 @@ const ClientBox = ({ src, alt }) => (
     </div>
 );
 
-const HomeAbout = () => (
-    <section id="about">
-        <div className="about">
-            <div className="about-content">
-                <h1>Leadership team of hard working <span>great people</span></h1>
-                <div className="info">
-                    <div className="main">
-                        <img className="fill-img" src={aboutImg} alt="about" />
+const HomeAbout = () => {
+
+    const { t } = useTranslation();
+    return (
+        <section id="about">
+            <div className="about">
+                <div className="about-content">
+                    <h1>{t('home_about.heading')} <span>{t('home_about.heading_span')}</span></h1>
+                    <div className="info">
+                        <div className="main">
+                            <img className="fill-img" src={aboutImg} alt={t('home_about.alt_text', { defaultValue: 'about' })} />
+                        </div>
+                        <div className="text">
+                            <p>
+                                {t('home_about.description')} <span>{t('home_about.description_span')}</span> {t('home_about.description_continued')}
+                            </p>
+                        </div>
                     </div>
-                    <div className="text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <span>labore et dolore</span> magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                </div>
-                <div className="clients">
-                    <div className="clients-group">
-                        {clients.map((client, index) => (
-                            <ClientBox key={index} src={client} alt={`client ${index + 1}`} />
-                        ))}
+                    <div className="clients">
+                        <div className="clients-group">
+                            {clients.map((client, index) => (
+                                <ClientBox key={index} src={client} alt={`client ${index + 1}`} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-);
+        </section>
+    )
+};
 
 export default HomeAbout;

@@ -29,13 +29,14 @@ const Sidebar = () => {
                     </div>
                     <div className="sidebar-items">
                         <ul>
-                            <li><Link to="/about-us">About Us</Link></li>
-                            <li><Link to="/contact">Contact Us</Link></li>
-                            <li><Link to='/product/a2-p'>Application-to-Person messaging (A2P)</Link></li>
-                            <li><Link to='/product/p2-p'>Person-to-Person messaging (P2P)</Link></li>
-                            <li><Link to='/product/p2-a'>Person-to-Application messaging (P2A)</Link></li>
-                            <li><Link to='/product/sip-trunking'>SIP Trunking</Link></li>
-                            <li><Link to='/product/virtual-calls'>Virtual Calls</Link></li>
+                            <li><Link to="/">{t('footer.item_1')}</Link></li>
+                            <li><Link to="/about-us">{t('footer.item_2')}</Link></li>
+                            <li><Link to="/contact">{t('footer.item_3')}</Link></li>
+                            <li><Link to='/product/a2-p'>{t('footer.item_4')}</Link></li>
+                            <li><Link to='/product/p2-p'>{t('footer.item_5')}</Link></li>
+                            <li><Link to='/product/p2-a'>{t('footer.item_6')}</Link></li>
+                            <li><Link to='/product/sip-trunking'>{t('footer.item_7')}</Link></li>
+                            <li><Link to='/product/virtual-calls'>{t('footer.item_8')}</Link></li>
                         </ul>
                     </div>
                 </div>

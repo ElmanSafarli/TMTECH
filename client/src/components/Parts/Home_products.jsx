@@ -30,7 +30,6 @@ const HomeProducts = () => {
             <section id="second">
                 <div className="products">
                     <div className="products-content">
-
                         <div className="section-info">
                             <h1>{t('product.item_1')} <span>{t('product.item_2')}</span></h1>
                             <p>{t('product.item_3')}</p>
@@ -42,56 +41,54 @@ const HomeProducts = () => {
                                     <div className="product-box small">
                                         <div className="content">
                                             <Link to='/product/a2-p'>
-                                                <div className="icon"><img src={a2pHome} altproduct /></div>
-                                                <div className="img"><img src={a2pHome1} alt="product" className="fill-img" /></div>
+                                                <div className="icon"><img src={a2pHome} alt={t('product.alt_text')} /></div>
+                                                <div className="img"><img src={a2pHome1} alt={t('product.alt_text')} className="fill-img" /></div>
                                                 <div className="bottom">
-                                                    <h3>A2P SMS</h3>
-                                                    <p>Empower your app with A2P messaging! Reach users directly with high-delivery messaging for marketing, notifications, and more. Enhance engagement and reliability.</p>
+                                                    <h3>{t('product.a2p_sms_title')}</h3>
+                                                    <p>{t('product.a2p_sms_desc')}</p>
                                                 </div>
                                             </Link>
                                         </div>
                                     </div>
                                     <div className="product-box normal">
                                         <Link to='/product/p2-a'>
-                                            <div className="icon"><img src={p2aIcon} altproduct /></div>
-                                            <div className="img"> <img src={p2aHome} alt="product" className="fill-img" /></div>
+                                            <div className="icon"><img src={p2aIcon} alt={t('product.alt_text')} /></div>
+                                            <div className="img"><img src={p2aHome} alt={t('product.alt_text')} className="fill-img" /></div>
                                             <div className="bottom">
-                                                <h3>P2A SMS</h3>
-                                                <p>Enhance user interaction with P2A messaging! Enable interactive services like surveys and info retrieval, ensuring seamless communication.</p>
+                                                <h3>{t('product.p2a_sms_title')}</h3>
+                                                <p>{t('product.p2a_sms_desc')}</p>
                                             </div>
                                         </Link>
                                     </div>
                                     <div className="product-box normal">
                                         <Link to='/product/p2-p'>
-                                            <div className="icon"><img src={p2pHome} altproduct /></div>
-                                            <div className="img"> <img src={p2pmainHome} alt="product" className="fill-img" /></div>
+                                            <div className="icon"><img src={p2pHome} alt={t('product.alt_text')} /></div>
+                                            <div className="img"><img src={p2pmainHome} alt={t('product.alt_text')} className="fill-img" /></div>
                                             <div className="bottom">
-                                                <h3>P2P SMS</h3>
-                                                <p>Instant, reliable P2P communication! Enjoy seamless message exchange for personal and business use, ensuring messages always get through.</p>
+                                                <h3>{t('product.p2p_sms_title')}</h3>
+                                                <p>{t('product.p2p_sms_desc')}</p>
                                             </div>
                                         </Link>
                                     </div>
                                 </div>
                                 <div className="end">
-
                                     <div className="product-box long">
                                         <Link to='/product/sip-trunking'>
-                                            <div className="icon"><img src={sipHome} altproduct /></div>
-                                            <div className="img"> <img src={sipmainHome} alt="product" className="fill-img" /></div>
+                                            <div className="icon"><img src={sipHome} alt={t('product.alt_text')} /></div>
+                                            <div className="img"><img src={sipmainHome} alt={t('product.alt_text')} className="fill-img" /></div>
                                             <div className="bottom">
-                                                <h3>SIP Trunking</h3>
-                                                <p>Efficient voice communication with SIP-Trunking! Consolidate voice services over the internet, reducing costs and improving flexibility.</p>
+                                                <h3>{t('product.sip_trunking_title')}</h3>
+                                                <p>{t('product.sip_trunking_desc')}</p>
                                             </div>
                                         </Link>
                                     </div>
-
                                     <div className="product-box wee">
                                         <Link to='/product/virtual-calls'>
-                                            <div className="icon"><img src={vcHome} altproduct /></div>
-                                            <div className="img"> <img src={vcmainHome} alt="product" className="fill-img" /></div>
+                                            <div className="icon"><img src={vcHome} alt={t('product.alt_text')} /></div>
+                                            <div className="img"><img src={vcmainHome} alt={t('product.alt_text')} className="fill-img" /></div>
                                             <div className="bottom">
-                                                <h3>Virtual Calling</h3>
-                                                <p>Expand possibilities with Virtual Calling! Conduct high-quality virtual meetings and webinars worldwide, enhancing communication flexibility.</p>
+                                                <h3>{t('product.virtual_calls_title')}</h3>
+                                                <p>{t('product.virtual_calls_desc')}</p>
                                             </div>
                                         </Link>
                                     </div>
@@ -99,11 +96,11 @@ const HomeProducts = () => {
                             </div>
                             <div className="products-r">
                                 <div className="product-box small">
-                                    <div className="icon"><img src={apiIconHome} altproduct /></div>
-                                    <div className="img"> <img src={apimainHome} alt="product" className="fill-img" /></div>
+                                    <div className="icon"><img src={apiIconHome} alt={t('product.alt_text')} /></div>
+                                    <div className="img"><img src={apimainHome} alt={t('product.alt_text')} className="fill-img" /></div>
                                     <div className="bottom">
-                                        <h3>Communication APIs</h3>
-                                        <p>Integrate communication seamlessly with our API! Support messaging, voice, and video calls effortlessly, tailored to your business needs.</p>
+                                        <h3>{t('product.apis_title')}</h3>
+                                        <p>{t('product.apis_desc')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +108,7 @@ const HomeProducts = () => {
                     </div>
                 </div>
             </section>
-        </Element >
+        </Element>
 
     );
 };
