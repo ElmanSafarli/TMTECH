@@ -20,7 +20,7 @@ const Navbar = () => {
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-    const [activeContent, setActiveContent] = useState(null);
+    const [activeContent, setActiveContent] = useState('navdropcont1');
 
     const handleScroll = () => {
         if (window.scrollY > 50) {
@@ -98,7 +98,7 @@ const Navbar = () => {
                 </div>
                 <div className="inline navbar-content-r">
                     <LanguageSwitcher />
-                    <Link to='contact' className='navbarContact'><FontAwesomeIcon icon={faPhone} /><p>{t('navBar.item_3')}</p></Link>
+                    <Link to='/contact' className='navbarContact'><FontAwesomeIcon icon={faPhone} /><p>{t('navBar.item_3')}</p></Link>
                     <Sidebar />
                 </div>
             </div>

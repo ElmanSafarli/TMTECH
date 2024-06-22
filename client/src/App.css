@@ -1158,6 +1158,7 @@ div.dropdown>div.list>div.item span {
     position: absolute;
     left: 0;
     bottom: 0;
+    transition: 0.3s all;
 }
 
 .contact-form .contact-l h1 {
@@ -1206,6 +1207,7 @@ div.dropdown>div.list>div.item span {
     padding: 48px;
     background: var(--black);
     overflow: hidden;
+    transition: 0.3s all;
 }
 
 .contact-r .content form .top p {
@@ -1266,8 +1268,8 @@ div.dropdown>div.list>div.item span {
     padding: 24px 64px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: var(--purple);
-    color: var(--white);
     overflow: hidden;
     transition: all 0.2s;
     cursor: pointer;
@@ -1299,7 +1301,7 @@ div.dropdown>div.list>div.item span {
 }
 
 .contact-r .content form .bottom button:hover span {
-    transform: translateX(7em);
+    transform: translateX(12em);
 }
 
 .contact-r .content form .bottom button:active {
