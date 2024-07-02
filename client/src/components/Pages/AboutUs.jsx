@@ -6,12 +6,17 @@ import Footer from "../include/Footer";
 
 // Images
 import logo from "../../assets/TMTECH-Black.png";
+import about1 from "../../assets/AboutP1.png";
+import about2 from "../../assets/AboutP2.png";
+import about3 from "../../assets/AboutP3.png";
+import about4 from "../../assets/AboutP4.png";
 
 const About = () => {
   const { t } = useTranslation();
   return (
     <>
       <Navbar />
+
       <div className="about-page">
         <div className="main">
           <div className="about-l">
@@ -25,7 +30,7 @@ const About = () => {
 
         <div className="info">
           <div className="about-l">
-            <img src="" alt="about" />
+            <img src={about2} alt="about" />
           </div>
           <div className="about-r">
             <h2>{t("about.role_title")}</h2>
@@ -36,7 +41,7 @@ const About = () => {
               <li>Mail.ru</li>
               <li>Odnoklassniki</li>
               <li>Facebook</li>
-              <li>{t("about.role_description")}</li>
+              <li>{t("about.role_additional")}</li>
             </ul>
           </div>
         </div>
@@ -44,40 +49,42 @@ const About = () => {
         <div className="info">
           <div className="about-l">
             <h2>{t("about.services")}</h2>
-            <p>{t("about.integration")}</p>
+            <p>{t("about.services_desc1")}</p>
             <ul>
               <li>
-                <b>{t("about.integration")}</b> {t("about.integration")}
+                <b>{t("about.integration_title")}</b> {t("about.integration")}
               </li>
               <li>
-                <b>{t("about.processing")}</b> {t("about.processing")}
+                <b>{t("about.processing_title")}</b> {t("about.processing")}
               </li>
               <li>
-                <b>{t("about.monitoring")}</b> {t("about.monitoring")}
+                <b>{t("about.monitoring_title")}</b> {t("about.monitoring")}
               </li>
             </ul>
           </div>
-          <div className="about-r"></div>
+          <div className="about-r">
+            <img src={about1} alt="about" />
+          </div>
         </div>
 
         <div className="info">
           <div className="about-l">
-            <img src="" alt="about" />
+            <img src={about4} alt="about" />
           </div>
           <div className="about-r">
             <h2>{t("about.advantages")}</h2>
             <ul>
               <li>
-                <b>{t("about.reliability")}</b> {t("about.reliability_desc")}
+                <b>{t("about.reliability_title")}</b> {t("about.reliability")}
               </li>
               <li>
-                <b>{t("about.speed")}</b> {t("about.speed_desc")}
+                <b>{t("about.speed_title")}</b> {t("about.speed")}
               </li>
               <li>
-                <b>{t("about.flexibility")}</b> {t("about.flexibility_desc")}
+                <b>{t("about.flexibility_title")}</b> {t("about.flexibility")}
               </li>
               <li>
-                <b>{t("about.scalability")}</b> {t("about.scalability_desc")}
+                <b>{t("about.scalability_title")}</b> {t("about.scalability")}
               </li>
             </ul>
           </div>
@@ -88,19 +95,19 @@ const About = () => {
             <h2>{t("about.applications")}</h2>
             <ul>
               <li>
-                <b>{t("about.marketing")}</b> {t("about.marketing_desc")}
+                <b>{t("about.marketing_title")}</b> {t("about.marketing")}
               </li>
               <li>
-                <b>{t("about.services_desc")}</b> {t("about.services_desc")}
+                <b>{t("about.services_title")}</b> {t("about.services_desc2")}
               </li>
               <li>
-                <b>{t("about.communication")}</b>{" "}
-                {t("about.communication_desc")}
+                <b>{t("about.communication_title")}</b>{" "}
+                {t("about.communication")}
               </li>
             </ul>
           </div>
           <div className="about-r">
-            <img src="" alt="about" />
+            <img src={about3} alt="about" />
           </div>
         </div>
       </div>
