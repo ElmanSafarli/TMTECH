@@ -409,7 +409,7 @@
 
 .navdropcont ul li {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 10px;
     width: 300px;
 }
@@ -976,6 +976,64 @@ div.dropdown>div.list>div.item span {
     color: var(--grey);
 }
 
+/* About Page */
+.about-page {
+    padding: 0 4%;
+}
+
+.about-page .main, .about-page .info {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-page .main h1 {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--black);
+    width: 640px;
+    margin-top: 10px;
+}
+
+.about-page .main .about-r {
+    width: 40%;
+}
+
+.about-page .main .about-r img {
+    width: 100%;
+}
+
+.about-page .info h2 {
+    font-weight: 500;
+    font-size: 26px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.about-page .info p {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--grey);
+    margin-bottom: 6px;
+    width: 560px;
+}
+
+.about-page .info ul {
+    width: 520px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--grey);
+    margin-left: 20px;
+}
+
+.about-page .info ul li {
+    margin-bottom: 6px;
+}
+
+
 /* About */
 .about-content {
     padding: 0 4%;
@@ -1513,8 +1571,8 @@ div.dropdown>div.list>div.item span {
 }
 
 .footer-logo img {
-    width: 100px;
-    height: 100px;
+    width: 124px;
+    height: 124px;
 }
 
 .footer-logo .copyright {
