@@ -5,7 +5,6 @@ import { Element } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom"
 
-import product from '../../assets/header.jpg'
 import a2pHome from '../../assets/a2pHome.png'
 import a2pHome1 from '../../assets/a2pHome1.png'
 import p2pHome from '../../assets/p2pIcon.png'
@@ -18,8 +17,6 @@ import vcmainHome from '../../assets/vcmainHome.png'
 import apimainHome from '../../assets/api.png'
 import sipmainHome from '../../assets/Sip-trunking.png.webp'
 import p2pmainHome from '../../assets/p2phome.png'
-
-
 
 const HomeProducts = () => {
 

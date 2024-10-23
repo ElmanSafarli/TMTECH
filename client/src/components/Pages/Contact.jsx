@@ -4,7 +4,6 @@ import {
 
 import { useTranslation } from 'react-i18next';
 import ReCAPTCHA from "react-google-recaptcha";
-// 6LdcKP0pAAAAACXxnDSVGfcxvZElrlUmlMq16LJQ SITE KEY   
 
 import React, { useState } from 'react';
 import ReactFlagsSelect from "react-flags-select";
@@ -69,7 +68,7 @@ const Contact = () => {
             return;
         }
 
-        emailjs.sendForm('service_08k8ucq', 'template_sz4jjao', e.target, '0hGQlVlNmMBKzCDVZ')
+        emailjs.sendForm('service_oqopidu', 'template_sz4jjao', e.target, '0hGQlVlNmMBKzCDVZ')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

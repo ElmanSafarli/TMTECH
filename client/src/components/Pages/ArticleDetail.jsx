@@ -20,7 +20,7 @@ const ArticleDetail = () => {
     const [articlesImg, setArticlesImg] = useState([]);
     const server = API;
 
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     const getSelectedLanguage = () => {
         const storedLanguage = localStorage.getItem('selectedLanguage');

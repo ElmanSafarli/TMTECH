@@ -3,20 +3,6 @@ import { useTranslation } from "react-i18next";
 
 // Images
 import aboutImg from "../../assets/3185942.jpg";
-// import client_1 from "../../assets/client_1.png";
-// import client_2 from "../../assets/client_2.png";
-// import client_3 from "../../assets/client_3.png";
-// import client_4 from "../../assets/client_4.png";
-// import client_5 from "../../assets/client_5.png";
-// import client_6 from "../../assets/client_6.png";
-
-// const clients = [client_1, client_2, client_3, client_4, client_5, client_6];
-
-// const ClientBox = ({ src, alt }) => (
-//   <div className="client-box">
-//     <img src={src} alt={alt} />
-//   </div>
-// );
 
 const HomeAbout = () => {
   const { t } = useTranslation();
